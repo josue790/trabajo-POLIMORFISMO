@@ -1,0 +1,19 @@
+class Vehiculo:
+    def mover(self):
+        pass
+
+class Coche:
+    def mover(self):
+        return "El coche se está moviendo"
+
+class Bicicleta:
+    def mover(self):
+        return "La bicicleta se está moviendo"
+
+def main():
+    vehiculos = [Coche(), Bicicleta()]
+    for v in vehiculos:
+        print(v.mover())
+
+if __name__ == "__main__":
+    main()
