@@ -1,19 +1,13 @@
 class Vehiculo:
     def mover(self):
         pass
-
-class Coche:
+class Coche(Vehiculo):
     def mover(self):
-        return "El coche se está moviendo"
-
-class Bicicleta:
+        return "el coche esta en movimiento"
+class Bicicleta(Vehiculo):
     def mover(self):
-        return "La bicicleta se está moviendo"
+        return "la bicicleta esta en movimiento"
 
-def main():
-    vehiculos = [Coche(), Bicicleta()]
-    for v in vehiculos:
-        print(v.mover())
-
-if __name__ == "__main__":
-    main()
+vehiculos = [Coche(), Bicicleta()]
+for vehiculo in vehiculos:
+    print(vehiculo.mover())
