@@ -7,7 +7,6 @@ class Coche(Vehiculo):
 class Bicicleta(Vehiculo):
     def mover(self):
         return "la bicicleta esta en movimiento"
-
 vehiculos = [Coche(), Bicicleta()]
 for vehiculo in vehiculos:
     print(vehiculo.mover())
