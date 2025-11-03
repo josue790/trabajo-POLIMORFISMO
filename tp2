@@ -1,8 +1,6 @@
-# Clase base
 class Animal:
     def hacerSonido(self):
         raise NotImplementedError("Este método debe ser sobrescrito por la subclase")
-# Subclases
 class Perro(Animal):
     def hacerSonido(self):
         return "Guau"
