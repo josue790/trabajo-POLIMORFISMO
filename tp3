@@ -1,12 +1,9 @@
 class Vehiculo:
     def mover(self):
-        pass
+        raise NotImplementedError("Este método debe ser sobrescrito por la subclase")
 class Coche(Vehiculo):
     def mover(self):
-        return "el coche esta en movimiento"
+        return "El coche está conduciendo"
 class Bicicleta(Vehiculo):
     def mover(self):
-        return "la bicicleta esta en movimiento"
-vehiculos = [Coche(), Bicicleta()]
-for vehiculo in vehiculos:
-    print(vehiculo.mover())
+        return "La bicicleta está pedaleando"
