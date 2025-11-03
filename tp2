@@ -1,12 +1,11 @@
+# Clase base
 class Animal:
-    def hacer_sonido(self):
-        pass 
+    def hacerSonido(self):
+        raise NotImplementedError("Este método debe ser sobrescrito por la subclase")
+# Subclases
 class Perro(Animal):
-    def hacer_sonido(self):
-        return "mi perro (nombre: Nala) hace Guauu"
+    def hacerSonido(self):
+        return "Guau"
 class Gato(Animal):
-    def hacer_sonido(self):
-        return "mi gato (nombre:macri) hace Miauu"
-animales = [Perro(), Gato()]
-for animal in animales:
-    print(animal.hacer_sonido())
+    def hacerSonido(self):
+        return "Miau"
