@@ -1,6 +1,6 @@
 class Empleado:
     def calcularSalario(self):
-        pass
+        raise NotImplementedError("Este método debe ser sobrescrito por la subclase")
 class EmpleadoPorHora(Empleado):
     def __init__(self, horas, tarifa):
         self.horas = horas
