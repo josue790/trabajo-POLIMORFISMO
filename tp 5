@@ -1,6 +1,6 @@
 class Pago:
     def procesarPago(self):
-        raise NotImplementedError("Este método debe ser sobrescrito por la subclase")
+        return "Este método debe ser sobrescrito por la subclase"
 class TarjetaCredito(Pago):
     def procesarPago(self):
         return "Pago procesado con tarjeta de crédito"
