@@ -1,9 +1,9 @@
 class Vehiculo:
-    def mover(self):
-        raise NotImplementedError("Este método debe ser sobrescrito por la subclase")
-class Coche(Vehiculo):
-    def mover(self):
-        return "El coche está conduciendo"
-class Bicicleta(Vehiculo):
-    def mover(self):
-        return "La bicicleta está pedaleando"
+    def arrancar(self):
+        return "Este método debe ser sobrescrito por la subclase"
+class Auto(Vehiculo):
+    def arrancar(self):
+        return "El auto está arrancando"
+class Moto(Vehiculo):
+    def arrancar(self):
+        return "La moto está arrancando"
