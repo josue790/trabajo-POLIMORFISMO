@@ -1,9 +1,9 @@
 class Vehiculo:
     def arrancar(self):
         return "Este método debe ser sobrescrito por la subclase"
-class Auto(Vehiculo):
+class Coche(Vehiculo):
     def arrancar(self):
-        return "El auto está arrancando"
-class Moto(Vehiculo):
+        return "El coche está arrancando en circulos"
+class Bisicleta(Vehiculo):
     def arrancar(self):
-        return "La moto está arrancando"
+        return "La bisicleta está moviendose en linea recta"
